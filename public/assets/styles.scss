@@ -1,0 +1,28 @@
+// ベースのスタイル
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  overflow-wrap: break-word;
+  word-break: auto-phrase;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 20px auto 40px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+code {
+  font-family: monospace, sans-serif;
+}
+
+// テーマカラーの定義
+:root {
+  --accent: #33f;
+  --bg: #fafcff;
+  --text: #383838;
+  --text-gray: #707070;
+}

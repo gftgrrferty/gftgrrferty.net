@@ -1,0 +1,20 @@
+{% set lang = lang | default(site.lang) %}
+<!doctype html>
+<html{% if lang %} lang="{{ lang }}"{% endif %}>
+  <head>
+  {% include "head.njk" %}
+  </head>
+
+  <body>
+    {% if type != "home" %}
+    <header>
+    </header>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+
+    <footer>
+      <p class="copy">© {% currentYear %} gftgrrferty</p>
+    </footer>
+  </body>
+</html>
