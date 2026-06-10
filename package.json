@@ -1,0 +1,28 @@
+{
+  "name": "gftgrrferty-net",
+  "version": "0.0.0",
+  "description": "Build gftgrrferty.net",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gftgrrferty/gftgrrferty.net.git"
+  },
+  "author": "gftgrrferty",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gftgrrferty/gftgrrferty.net/issues"
+  },
+  "homepage": "https://github.com/gftgrrferty/gftgrrferty.net#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "latest",
+    "sass": "latest",
+    "wrangler": "latest"
+  },
+  "dependencies": {
+    "luxon": "^3.7.2"
+  }
+}

@@ -1,0 +1,8 @@
+/*
+  Content-Security-Policy: default-src 'self'; frame-ancestors 'none';
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  X-Robots-Tag: noarchive
+
+/cdn-cgi/*
+  X-Robots-Tag: none
