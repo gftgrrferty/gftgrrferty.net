@@ -7,7 +7,7 @@ type: "home"
 
 <div>
   <h1>{{ site.title }}</h1>
-  <p>こんにちは</p>
+  <p>やっほー！</p>
 </div>
 
 {% if collections.notes | length > 0 %}
