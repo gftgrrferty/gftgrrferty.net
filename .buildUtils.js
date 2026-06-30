@@ -52,7 +52,15 @@ const ensureDateFromFilename = (item) => {
 const sortByDateDesc = (a, b) => {
   const ad = a.data?.date || a.date;
   const bd = b.data?.date || b.date;
-  return new Date(bd) - new Date(ad);
+
+  const dataComparison = new Date(bd) - new Date(ad);
+  if (dataComparison !== 0) {
+    return dataComparison;
+  }
+
+  const af = a.inputPath || a.file;
+  const bf = b.inputPath || b.file;
+  return bf.localeCompare(af);
 };
 
 // 配列の最初のn個のアイテムを返す関数
