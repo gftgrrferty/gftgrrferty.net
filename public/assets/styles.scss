@@ -19,6 +19,13 @@ code {
   font-family: monospace, sans-serif;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 // テーマカラーの定義
 :root {
   --accent: #33f;
