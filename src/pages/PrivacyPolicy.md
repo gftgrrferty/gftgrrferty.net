@@ -1,7 +1,7 @@
 ---
 layout: "default"
 lang: "ja"
-permalink: "/PrivacyPolicy/"
+permalink: "/privacypolicy/"
 title: "PrivacyPolicy"
 ---
 
