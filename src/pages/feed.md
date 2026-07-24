@@ -1,7 +1,7 @@
 ---
 layout: "default"
 lang: "ja"
-permalink: "/"
+permalink: "/feed/"
 type: "home"
 ---
 
