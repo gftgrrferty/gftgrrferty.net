@@ -13,7 +13,7 @@
     "url": "git+https://github.com/gftgrrferty/gftgrrferty.net.git"
   },
   "author": "gftgrrferty",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/gftgrrferty/gftgrrferty.net/issues"
   },
