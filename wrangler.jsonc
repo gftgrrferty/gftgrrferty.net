@@ -1,13 +1,14 @@
 {
   "name": "gftgrrferty-net",
-  "compatibility_date": "2026-06-10",
+  "compatibility_date": "2026-10-01",
   "workers_dev": false,
   "assets": {
     "directory": "./_site",
     "not_found_handling": "404-page"
   },
   "build": {
-    "command": "npm run build"
+    "command": "npm run build",
+    "watch_dir": ["src", "public"]
   },
   "routes": [
     {
