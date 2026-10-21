@@ -4,8 +4,8 @@
   "description": "Build gftgrrferty.net",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
+    "build": "eleventy --config build_scripts/.eleventy.js",
+    "dev": "wrangler dev",
     "clean": "rm -r _site .wrangler"
   },
   "repository": {
@@ -20,10 +20,10 @@
   "homepage": "https://github.com/gftgrrferty/gftgrrferty.net#readme",
   "devDependencies": {
     "@11ty/eleventy": "latest",
+    "html-minifier-terser": "latest",
+    "luxon": "latest",
     "sass": "latest",
+    "terser": "latest",
     "wrangler": "latest"
-  },
-  "dependencies": {
-    "luxon": "^3.7.2"
   }
 }
