@@ -21,19 +21,18 @@ npm run build
 以下のコマンドでEleventyのローカルサーバーを起動します。
 
 ```bash
-npm run serve
+npx wrangler dev
 ```
 
 ## ファイル構成
 
-- `./.buildUtils.js` - ビルド時に使う便利なユーティリティ関数
-- `./.eleventy.js` - Eleventyのビルドスクリプト
+- `./build_scripts/` - ビルド時に使うスクリプトがあるディレクトリ
+- `./build_scripts/.eleventy.js` - ビルドスクリプトの始まり
 - `./package.json` - npmの設定ファイル
 - `./wrangler.jsonc` - [Cloudflare Workersの設定ファイル](https://developers.cloudflare.com/workers/wrangler/configuration/)
 - `./public/` - 公開用のファイル, ほぼそのままコピーされる
   - `./public/.well-known/` - well-knownディレクトリ
-  - `./public/assets/` - 画像やCSSなどのアセット
-    - `./public/assets/style.scss` - SCSSのスタイルシート, これだけビルド時にCSSに変換される
+  - `./public/assets/` - 画像などのアセット
   - `./public/_headers/` - [HTTPヘッダーの設定ファイル](https://developers.cloudflare.com/pages/configuration/headers/)
   - `./public/_redirects/` - [リダイレクトの設定ファイル](https://developers.cloudflare.com/pages/configuration/redirects/)
   - `./public/robots.txt` - [robots.txtファイル](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt?hl=ja)
@@ -45,6 +44,7 @@ npm run serve
     - `./src/_includes/base.njk` - テンプレートのベース, headerとfooterを含む
     - `./src/_includes/default.njk` - 普通のページ用テンプレート, 空
     - `./src/_includes/head.njk` - headタグ内の内容
+  - `./src/assets/` - SCSS用アセット、コンパイルしたCSSは`./_site/assets/`にコピーされる
   - `./src/notes/` - ノートのMarkdownファイル, YYYY-MM-DD-name.mdの形式で保存
   - `./src/pages/` - トップページなどをまとめておくディレクトリ
     - `./src/pages/404.md` - 404ページ
