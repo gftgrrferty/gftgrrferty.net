@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 6px;
-  font-family: system-ui, sans-serif;
+  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
 }
 .notes-panel {
   background-color: white;
