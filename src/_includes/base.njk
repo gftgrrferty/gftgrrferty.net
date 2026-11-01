@@ -6,15 +6,18 @@
   </head>
 
   <body>
-    {% if type != "home" %}
-    <header>
-    <a href=/>戻る</a>
+    <header class="site-header">
+      <a class="logo" href="/">gftgrrferty<span class="logo-dot">.</span>net</a>
+      <nav class="nav">
+        <a {% if type == "home" %}class="active"{% endif %} href="/">ホーム</a>
+        <a {% if page.url == "/works/" %}class="active"{% endif %} href="/works/">作ったもの</a>
+        <a {% if page.url == "/feed/" %}class="active"{% endif %} href="/feed/">ノート</a>
+      </nav>
     </header>
-    {% endif %}
 
     {% block content %}{% endblock %}
 
-    <footer>
+    <footer class="site-footer">
       <p class="copy">© {% currentYear %} gftgrrferty</p>
       <p><a href="mailto:abihayato@icloud.com">連絡先</a></p>
     </footer>

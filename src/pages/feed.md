@@ -2,7 +2,6 @@
 layout: "default"
 lang: "ja"
 permalink: "/feed/"
-type: "home"
 ---
 
 {% if collections.notes | length > 0 %}

@@ -1,0 +1,71 @@
+---
+layout: "default"
+lang: "ja"
+permalink: "/"
+type: "home"
+---
+
+<div class="profile">
+  <div class="hstack">
+    <div class="image">
+      <img id="profile_image" src="/assets/kaguya-pink.png" alt="プロフィール画像">
+    </div>
+    <div class="me">
+      <h1>あび</h1>
+      <p>@gftgrrferty</p>
+    </div>
+  </div>
+  <p>何か作ることが好きで、アプリやサイトを作ったりしています。</p>
+  <div class="link-area">
+    <a href="https://x.com/home">
+      <img src="/assets/logo-black.png" alt="X">
+    </a>
+    <!-- <a href="https://vrchat.com/home/user/usr_2a8c5b84-7c69-43e8-9bdc-c8688bb40db4">
+      <img src="/assets/VRChat Logo Outline Black.png" alt="VRchat">
+    </a> -->
+    <a href="https://github.com/gftgrrferty">
+      <img src="/assets/GitHub_Invertocat_Black.png" alt="Github">
+    </a>
+    <!-- <a href="https://apps.apple.com/us/developer/hayato-abiru/id6790819926">
+      <img src="/assets/appstore.svg" alt="App Store">
+    </a> -->
+  </div>
+</div>
+
+<div class="main">
+  <div class="todo">
+    <h2>やっていること</h2>
+    <ul class="skills">
+      <li><span class="skill-name">SwiftUI</span>iOSアプリ制作</li>
+      <li><span class="skill-name">JavaScript</span>Webサイト制作やツール作りに挑戦中</li>
+      <li><span class="skill-name">Unity</span>3Dまわり</li>
+      <li><span class="skill-name">Blender</span>3Dまわり</li>
+    </ul>
+  </div>
+</div>
+
+<div class="like">
+  <h2>好きなこと</h2>
+  <ul class="list-like">
+    <li>何か作ること</li>
+    <li>VRChat</li>
+    <li>新しいことを学ぶこと</li>
+  </ul>
+</div>
+
+<div class="update">
+  <h2>活動記録ノート</h2>
+  <p class="update-sub">日々の学習や制作の記録を、ノートにまとめています。</p>
+  <div class="notes-panel">
+    {% for note in collections.notes | firstItems(5) %}
+    <a class="note-row" href="{{ note.url }}">
+      <span class="note-date">{{ note.data.date | dateISO | replace("-", ".") | replace("-", ".") }}</span>
+      <span class="note-title">{{ note.data.title | escape }}</span>
+      <span class="note-arrow">→</span>
+    </a>
+    {% endfor %}
+    <a class="notes-more" href="/feed/">すべてのノートを見る →</a>
+  </div>
+</div>
+
+<p class="works-link"><a href="/works/">作ったものを見る →</a></p>
