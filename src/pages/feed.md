@@ -8,7 +8,7 @@ permalink: "/feed/"
 <section>
   {% for note in collections.notes %}
   <article>
-    <a href="{{ note.url }}" target="_blank">
+    <a href="{{ note.url }}">
       <h3>{{ note.data.title | escape }}</h3>
       <time datetime="{{ note.data.date | dateISO }}">
         {{ note.data.date | date }}
