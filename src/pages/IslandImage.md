@@ -28,15 +28,15 @@ title: "Island Image"
   <h2>スクリーンショット</h2>
   <div class="app-shots">
     <figure>
-      <div class="app-frame"><img src="/assets/islandimage/ContentView.png" alt="Island Imageのノート一覧画面"></div>
+      <img src="/assets/islandimage/ContentView.png" alt="Island Imageのノート一覧画面">
       <figcaption>ノート一覧</figcaption>
     </figure>
     <figure>
-      <div class="app-frame"><img src="/assets/islandimage/EditView.png" alt="メイン画像・サブ画像・ノート・Dynamic Islandの色を設定する編集画面"></div>
+      <img src="/assets/islandimage/EditView.png" alt="メイン画像・サブ画像・ノート・Dynamic Islandの色を設定する編集画面">
       <figcaption>ノートの編集</figcaption>
     </figure>
     <figure>
-      <div class="app-frame"><img src="/assets/islandimage/Home.png" alt="ホーム画面でDynamic Islandに画像が表示されている様子"></div>
+      <img src="/assets/islandimage/Home.png" alt="ホーム画面でDynamic Islandに画像が表示されている様子">
       <figcaption>ホーム画面</figcaption>
     </figure>
   </div>
