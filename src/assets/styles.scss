@@ -377,7 +377,7 @@ article time {
   height: 120px;
   border-radius: 27px;
   margin: 0 auto 20px;
-  box-shadow: 0 6px 24px rgb(0 0 0 / 0.14);
+  filter: drop-shadow(0 6px 24px rgb(0 0 0 / 0.14));
 }
 
 .app-hero h1 {
@@ -594,5 +594,160 @@ article time {
     white-space: nowrap;
     padding: 6px 12px;
     font-size: 14px;
+  }
+}
+
+// ===== ダークモード =====
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #1c191e;
+    color: #f4eff4;
+  }
+
+  .logo {
+    color: #f4eff4;
+  }
+
+  .nav a {
+    color: #f4eff4;
+  }
+
+  .nav a.active {
+    background-color: rgb(255 255 255 / 0.09);
+  }
+
+  .image img {
+    border-color: rgb(255 255 255 / 0.25);
+  }
+
+  .me p {
+    color: #bdb2bd;
+  }
+
+  .link-area a {
+    background-color: #262129;
+  }
+
+  .skills li {
+    color: #bdb2bd;
+  }
+
+  .skill-name {
+    color: #f4eff4;
+  }
+
+  .list-like li {
+    background-color: rgb(255 255 255 / 0.09);
+  }
+
+  .update-sub {
+    color: #bdb2bd;
+  }
+
+  .notes-panel {
+    background-color: #262129;
+    border-color: rgb(255 255 255 / 0.12);
+  }
+
+  .note-row {
+    border-bottom-color: rgb(255 255 255 / 0.12);
+    color: #f4eff4;
+  }
+
+  .note-date {
+    color: #8d828d;
+  }
+
+  .note-arrow {
+    color: #8d828d;
+  }
+
+  section article {
+    border-bottom-color: rgb(255 255 255 / 0.12);
+  }
+
+  section article a {
+    color: #f4eff4;
+  }
+
+  article time {
+    color: #8d828d;
+  }
+
+  .page-lead {
+    color: #bdb2bd;
+  }
+
+  .works li {
+    border-top-color: rgb(255 255 255 / 0.12);
+  }
+
+  .works li:last-child {
+    border-bottom-color: rgb(255 255 255 / 0.12);
+  }
+
+  .works h3 a {
+    color: #f4eff4;
+  }
+
+  .works p {
+    color: #bdb2bd;
+  }
+
+  .works .tag {
+    color: #8d828d;
+  }
+
+  .site-footer {
+    color: #8d828d;
+  }
+
+  .site-footer a {
+    color: #8d828d;
+  }
+
+  .app-num {
+    color: #e79abb;
+  }
+
+  .app-steps li {
+    border-top-color: rgb(255 255 255 / 0.12);
+  }
+
+  .app-steps li:last-child {
+    border-bottom-color: rgb(255 255 255 / 0.12);
+  }
+
+  .app-shots figcaption {
+    color: #8d828d;
+  }
+
+  .app-update ul {
+    color: #bdb2bd;
+  }
+
+  .app-ver time {
+    color: #8d828d;
+  }
+
+  .store-btn {
+    background-color: #f4eff4;
+    color: #1c191e;
+  }
+
+  .back-link a {
+    color: #e79abb;
+  }
+
+  .works-link a {
+    color: #e79abb;
+  }
+
+  .notes-more {
+    color: #e79abb;
   }
 }
