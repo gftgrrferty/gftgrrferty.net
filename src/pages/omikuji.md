@@ -5,7 +5,7 @@ permalink: "/omikuji/"
 title: "おみくじ"
 ---
 
-# おみくじ
+<h1 class="omikuji-title">おみくじ</h1>
 
 <p class="page-lead">ボタンを押すと今日の運勢が出ます。</p>
 
