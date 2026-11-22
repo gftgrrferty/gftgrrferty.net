@@ -11,8 +11,11 @@ title: "おみくじ"
 
 <div class="omikuji">
   <button id="draw" class="omikuji-btn" type="button">おみくじを引く</button>
-  <p id="unsei" class="omikuji-unsei"></p>
-  <p id="message" class="omikuji-message"></p>
+  <div id="result" class="omikuji-result" hidden>
+    <p class="omikuji-label">今日の運勢</p>
+    <p id="unsei" class="omikuji-unsei"></p>
+    <p id="message" class="omikuji-message"></p>
+  </div>
 </div>
 
 <script src="/omikuji.js"></script>
