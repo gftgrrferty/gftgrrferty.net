@@ -808,3 +808,8 @@ article time {
 body > article {
   text-align: center;
 }
+
+body > article ul {
+  display: inline-block;
+  text-align: left;
+}
